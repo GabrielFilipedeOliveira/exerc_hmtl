@@ -14,7 +14,7 @@ form.addEventListener('submit',function(e){
     const campoA = document.getElementById('CampoA');
     const campoB = document.getElementById('CampoB');
     const menssagemSucesso = `Tudo certo! O valor B=${campoB.value} é maior que o valor A=${campoA.value}`
-    formEvalido =validaCampo(campoA.value,campoB.value);
+    formEvalido =validaCampo(campoA.valueAsNumber,campoB.valueAsNumber);
     if (formEvalido){
         alert(menssagemSucesso);
 
